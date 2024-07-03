@@ -1,0 +1,28 @@
+.bibliography{
+    width: 80vw;
+    margin: 2em 10vw;
+}
+.bibliography h1{
+    margin-bottom: 1em;
+}
+.bibliography li{
+    list-style: none;
+    line-height: 3em;
+}
+.bibliography a:hover{
+    color: #065184;
+}
+
+@media only screen and (max-width: 600px) {
+    .bibliography{
+        width: 90vw;
+        margin: 1em 5vw;
+    }
+    .bibliography h1{
+        margin: 1em 0;
+    }
+    .bibliography li{
+        line-height: 4em;
+    }
+
+}

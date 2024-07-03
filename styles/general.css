@@ -1,0 +1,128 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+/* navbar */
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #065184;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title{
+    width: 30vw;
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.header-title h3{
+    color: white;
+    font-size: larger;
+}
+
+.header-menu{
+    width: 50vw;
+    margin-right: 10vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu li{
+    list-style: none;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.header-menu li a:hover{
+    text-decoration: underline;
+}
+#selected{
+    text-decoration: underline white;
+}
+
+/* footer */
+footer{
+    width: 80vw;
+    height: 20vh;
+    border-top: #065184 solid 2px;
+    margin: 5vw 10vw 0 10vw;
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer-email, .footer-2nd{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+.footer-email a, .footer-2nd a{
+    line-height: 2em;
+}
+.footer-email a:hover, .footer-2nd a:hover{
+    color: #065184;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        height: 30vw;
+    }
+    .header-title{
+        width: 100vw;
+        height: 15vw;
+        margin: 0;
+        justify-content: center;
+    }
+    .header-menu{
+        width: calc(100vw - 36px);
+        height: 15vw;
+        margin: 0;
+    }
+    .header-menu li a{
+        text-decoration: none;
+        color: white;
+        padding: 2px 6px;
+    }
+
+    #selected{
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.28);
+        border-radius: 4px;
+    }
+    .header-menu li a:hover{
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.28);
+        border-radius: 4px;
+    }
+
+    footer{
+        width: 100vw;
+        height: 80vw;
+        margin: 2em 0 0 0;
+        flex-direction: column;
+    }
+    .footer-email, .footer-2nd{
+        width: 80vw;
+        margin: 0 10vw;
+    }
+    .footer-email a, .footer-2nd a{
+        line-height: 3em;
+    }
+  }
