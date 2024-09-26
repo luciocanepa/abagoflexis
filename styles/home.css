@@ -108,6 +108,19 @@ body{
     bottom: 1em;
 }
 
+.links {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 5vh 0;
+}
+.links a:hover{
+    color: #065184;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .home-image{
         height: 100vw;
@@ -187,5 +200,19 @@ body{
         bottom: auto;
         margin-top: 1em;
         text-align: left;
+    }
+
+    .links {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25vh;
+        padding: 5vh 0;
+        text-align: center;
+    }
+    .links a:hover{
+        color: #065184;
+        cursor: pointer;
     }
 }
