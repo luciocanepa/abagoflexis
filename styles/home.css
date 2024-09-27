@@ -110,12 +110,29 @@ body{
 
 .links {
     width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 15vh;
-    padding: 5vh 0;
+    margin-top: 4vh;
+    border: #065184 2px solid;
 }
+
+.links-images {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    padding-top: 4vh;
+    padding-left: 2.5vw;
+}
+
+.links-images img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    padding-left: 2.5vw;
+}
+
+.links-text {
+    width: 80vw;
+    padding: 4vh 0 4vh 5vw;
+}
+
 .links a:hover{
     color: #065184;
     cursor: pointer;
@@ -204,13 +221,23 @@ body{
 
     .links {
         width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 25vh;
-        padding: 5vh 0;
-        text-align: center;
     }
+
+    .links-images {
+        grid-template-columns: 80vw;
+    }
+
+    .links-images img {
+        width: 70vw;
+        height: 70vw;
+        padding-bottom: 4vh;
+        padding-left: 7.5vw;
+    }
+
+    .links-text {
+        padding: 0 0 4vh 10vw;
+    }
+
     .links a:hover{
         color: #065184;
         cursor: pointer;
